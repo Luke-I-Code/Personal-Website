@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>The Journey</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/6331ac818b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  </div>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="/images/website logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="/Projects.html">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu"></i>
+      </nav>
+      <div class="header-text">
+        <p>Luke's Odyssey</p>
+        <h1><span>The Journey</span><br>of continuous improvement</h1>
+      </div>
+    </div>
+    <!-- -----------about----------- -->
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="/images/BeachPic_Backgroud.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">Professional Summary</h1>
+          <p>As an Exeter University graduate of 2023 with a degree in Business Management supplemented by diverse
+            tech-focused optional modules, I bring a unique blend of strategic business acumen and technological savvy
+            to the table. Beyond academia, I excel on the rugby field, embracing teamwork and discipline. Off the field,
+            I thrive on mental challenges, regularly engaging in puzzles for brain stimulation. Passionate about
+            personal development, I continuously seek avenues for growth, currently immersing myself in self-learning
+            programming to pivot towards a tech-oriented career. Complementing this journey, I invest in courses in
+            leadership and property, expanding my skill set and knowledge base. My portfolio reflects not just
+            qualifications, but a commitment to excellence and holistic growth, ready to contribute value to any
+            endeavor.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX</span><br>Designing Web interfaces</li>
+              <li><span>Web dev</span><br>Design</li>
+              <li><span>App develo</span><br>Web interfaces</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>CodeAcademy</span><br>Designing Web interfaces</li>
+              <li><span>ZTM</span><br>Design</li>
+              <li><span>Udemy</span><br>Web interfaces</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Uni</span><br>Designing Web interfaces</li>
+              <li><span>College</span><br>Design</li>
+              <li><span>School</span><br>Web interfaces</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------contact----------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-regular fa-paper-plane"></i> contact@example.com</p>
+          <p><i class="fa-solid fa-square-phone"></i> 0123456789</p>
+          <div class="social-icons">
+            <a href="https//:facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="/Luke Bralsford - Resume.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright @ Luke</p>
+    </div>
+  </div>
+
+
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+<script>
+
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+
+
+
+</script>
+
+</body>
+
+
+
+
+</html>
