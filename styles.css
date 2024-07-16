@@ -34,7 +34,8 @@ nav {
 .logo {
   width: 200px;
   height: 80px;
-  border-radius: 20px;
+  border-radius: 0px;
+  margin-top: 25px;
 }
 
 nav ul li {
